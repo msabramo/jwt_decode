@@ -43,3 +43,9 @@ $ docker run jwt-decode $JWT_TOKEN
 ```
 
 ![example image](images/example.png)
+
+To make this easier, you could even add something like this to one of your dotfiles, such as `~/.profile`:
+
+```bash
+jwt_decode() { docker run jwt-decode "$@"; }
+```
